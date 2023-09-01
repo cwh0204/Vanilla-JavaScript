@@ -9,3 +9,4 @@ console.log(c + "cwh~");
 console.log(daysWeek[0])
 daysWeek.push("sun");
 console.log(daysWeek)
+//2-5
