@@ -1,0 +1,15 @@
+.inline{
+    display: inline;
+}
+.topmargin{
+    margin-top: 20px;
+}
+.hidden{
+    display: none;
+}
+.bloak{
+    display: block;
+}
+.bold{
+    font-weight: bold;
+}

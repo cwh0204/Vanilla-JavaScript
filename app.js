@@ -1,20 +1,24 @@
-const title = document.querySelector("body");
-const title2 = document.querySelector("h2")
-const colors = ["yellow","purple","skyblue","tomato"];
-title2.style.color = "white"
-title.style.backgroundColor = colors[1];
-function handleResize(){
-    var wsize = window.innerWidth;
-    console.log(wsize);
-    if(wsize <= 400){
-        title.style.backgroundColor = colors[2];
+const random = document.querySelector("#game");
+const firstInputBox1 = document.querySelector("#game1");
+const firstInputBox2 = document.querySelector("#game2");
+const hidden = document.querySelector("#hiddenDiv")
+const span1 = document.querySelector("#span1");
+const span2 = document.querySelector("#span2");
+function randomButtonClick(event){
+    const randomNum1 = parseInt(firstInputBox1.value);
+    const randomNum2 = parseInt(firstInputBox2.value);
+    const randomNum = Math.floor(Math.random()* randomNum1 + 1);
+    event.preventDefault();
+    console.log(firstInputBox1.value);
+    console.log(firstInputBox2.value);
+    hidden.classList.remove("hidden")
+    span1.innerText = "You chose: " + firstInputBox2.value + " ,the machine chose: " + randomNum +".";
+    if (randomNum2 == randomNum){
+        span2.innerText = "You Win!!"
     }
-    else if(wsize > 400 && wsize <= 800 ){
-        title.style.backgroundColor = colors[1];
-    }
-    else if(wsize > 800 && wsize <= 1200 ){
-        title.style.backgroundColor = colors[0];
+    else{
+        span2.innerText = "You lose!!"
     }
 }
 
-window.addEventListener("resize",handleResize);
+random.addEventListener("submit", randomButtonClick);
