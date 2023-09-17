@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
   </head>
-
   <body>
-    <button>Give me color</button>
-    <script src="index.js"></script>
+    <div class="box1">
+      
+      <div class="inline">
+        <div>
+          <h2 id="clock" class="fontstyle">00:00:00</h2>
+        </div>
+        <div>
+          <h2 id="today" class="today fontstyle3"></h2>
+        </div>
+      </div>
+      
+      <div id="weather" class="hello1 fontstyle3">
+        <span></span>
+        <span></span>
+      </div>
+
+      <form class="hello0 hidden" id="login-form">
+        <input
+          class="loginbox"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+      </form>
+
+      <div class="hello">
+        <h1 class="hidden fontstyle1" id="greeting"></h1>
+      </div>
+
+      <form id="todo-form" class="margin">
+        <input type="text"  class="inputbox" placeholder="Write a To Do and Press Enter" required />
+      </form>
+    </div>
+    <div class="box3">
+      <h2 class="fontstyle4">  Todo List  </h2>
+      <ul id="todo-list" class="list-style fontstyle5"></ul>
+    </div>
+    <div id="quote" class="box2 fontstyle2">
+      <span></span>
+      <span></span>
+    </div>
+
+    
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@import "layout.css";
+@import "font.css";
+
+.hidden {
+  display: none;
+}
+.block{
+  display: block;
+}
+.inline{
+  display: inline-flex;
+}
+.list-style{
+  list-style-type: none;
+  list-style: none;
+  margin: 5px,0,0,0;
+  padding: 0;
+}
+.list-style1{
+  margin-top: 5px;
+}

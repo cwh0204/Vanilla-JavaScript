@@ -1,0 +1,59 @@
+input::placeholder{
+    color: white;
+}
+
+.inputbox{
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    width: 300px;
+    border: solid 4px white;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.loginbox{
+    background-color: transparent;
+    outline: none;
+    height: auto;
+    width: auto;
+    border: solid 4px white;
+    border-radius: 9px;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+  }
+.fontstyle{
+    margin-top: 60px;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+}
+.fontstyle1{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+.fontstyle2{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+.fontstyle3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.fontstyle4{
+    margin-left: 40px;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+.fontstyle5{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 40px;
+}
