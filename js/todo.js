@@ -31,6 +31,8 @@ function paintToDo(newTodo) {
   li.style.marginTop = "10px";
   li.style.marginLeft = "3px";
   button.style.marginLeft = "7px";
+  button.style.borderColor = "white"
+  button.style.borderRadius = "10px";
 }
 
 function handleToDoSubmit(event) {
